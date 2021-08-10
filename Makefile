@@ -1,4 +1,4 @@
-VERSION=1.0.0
+VERSION=1.0-CRW
 STRIPPED_VERSION=$(shell echo ${VERSION} | sed 's/v*\(.*\)/\1/' )
 MAJOR=$(shell echo ${STRIPPED_VERSION} | sed 's/\..*//' )
 MINOR=$(shell echo ${STRIPPED_VERSION} | sed 's/[^.]*\.\([^.]*\)\..*/\1/' )
