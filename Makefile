@@ -35,7 +35,7 @@ branch:
 	#Create or update a minor branch (e.g. 0.6.2 -> v0.6-branch)
 	git branch | grep -w $(BRANCH_NAME) ||\
 	( echo " => Creating branch $(BRANCH_NAME)" &&\
-	  git checkout master &&\
+	  git checkout main &&\
 	  git pull &&\
 	  git checkout -b $(BRANCH_NAME) $(UPDATE_TO_COMMIT)) &&\
 	( echo " => Branch $(BRANCH_NAME) exists, rebasing" &&\
