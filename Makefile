@@ -8,7 +8,7 @@ TAG_NAME=v$(MAJOR).$(MINOR).$(RELEASE)
 REPO_URL="https://github.com/pmalan-rh/odh-manifests"
 KFDEF_FILE="kfdef/kfctl_openshift.yaml"
 COMMIT_MESSAGE="Update KFdef for release $(TAG_NAME)"
-UPDATE_TO_COMMIT=master
+UPDATE_TO_COMMIT=main
 ifndef VERSION
 $(help)
 endif
